@@ -1,6 +1,70 @@
 .cardItemPanier button {
-    cursor: pointer;
+  cursor: pointer;
 }
 .cardItemPanier button:disabled {
-    cursor: auto;
+  cursor: auto;
+}
+.cardItem {
+  border: #1a1a1e 2px solid;
+  border-radius: 10px;
+}
+.cardItemHeader {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardItemHeader img {
+  width: 300px;
+}
+.cardItemBody {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-top: #1a1a1e 2px solid;
+}
+.cardItemTitle p {
+  margin-block: 5px;
+  font-size: 25px;
+  font-weight: 600;
+}
+.cardItemPanier button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  background: none;
+  border: #1a1a1e 1px solid;
+  transition: 200ms;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+.cardItemPanier button:hover {
+  background-color: #1a1a1e;
+  color: white;
+  transition: 200ms;
+  cursor: pointer;
+}
+.cardItemPanier {
+  align-self: center;
+}
+.cardItemInfo {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 450;
+  font-size: 18px;
+}
+@media screen and (max-width: 992px) {
+  .cardItem {
+    width: calc(45vw - 10px);
+  }
+  .cardItemHeader img {
+    width: 42vw;
+  }
+  .cardItemHeader {
+    width: 42vw;
+    width: 42vw;
+  }
 }

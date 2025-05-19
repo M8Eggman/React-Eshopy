@@ -1,6 +1,6 @@
 [
   {
-    "img": "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/",
+    "img": "https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$",
     "nom": "Manette PS5 DualSense",
     "prix": 69.99,
     "stock": 15,
@@ -8,7 +8,7 @@
     "quantite": 0
   },
   {
-    "img": "https://www.xbox.com/fr-BE/consoles/xbox-series-x",
+    "img": "https://m.media-amazon.com/images/I/61JGKhqxHxL._AC_SL1500_.jpg",
     "nom": "Xbox Series X",
     "prix": 499.99,
     "stock": 8,
@@ -16,7 +16,7 @@
     "quantite": 0
   },
   {
-    "img": "https://www.nintendo.com/fr-fr/Hardware/Gamme-Nintendo-Switch/Nintendo-Switch-Modele-OLED/Nintendo-Switch-Modele-OLED-2000984.html",
+    "img": "https://assets.nintendo.eu/image/upload/f_auto,q_auto/NAL/Consoles%20and%20Products/Nintendo%20Switch%20OLED/ci_nswitch_oled_vivid_colors.png",
     "nom": "Nintendo Switch OLED",
     "prix": 349.99,
     "stock": 12,
@@ -24,7 +24,7 @@
     "quantite": 0
   },
   {
-    "img": "https://www.corsair.com/ww/fr/c/gaming-headsets/rgb-headsets",
+    "img": "https://www.numerama.com/content/uploads/2018/07/hyperx-cloudalpha.png",
     "nom": "Casque Gaming RGB",
     "prix": 89.99,
     "stock": 20,
@@ -32,7 +32,7 @@
     "quantite": 0
   },
   {
-    "img": "https://www.pexels.com/fr-fr/chercher/clavier%20m%C3%A9canique/",
+    "img": "https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c08214510.png",
     "nom": "Clavier Mécanique",
     "prix": 129.99,
     "stock": 18,
@@ -40,7 +40,7 @@
     "quantite": 0
   },
   {
-    "img": "https://www.pexels.com/fr-fr/chercher/souris%20gamer/",
+    "img": "https://resource.logitechg.com/w_386,ar_1.0,c_limit,f_auto,q_auto,dpr_2.0/d_transparent.gif/content/dam/gaming/en/products/g502x-plus/gallery/g502x-plus-gallery-1-black.png?v=1",
     "nom": "Souris Gaming",
     "prix": 59.99,
     "stock": 25,
