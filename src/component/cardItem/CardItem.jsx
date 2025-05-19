@@ -1,23 +1,25 @@
 import "./CardItem.css";
 
-function CardItem({identite}) {
+function CardItem({ informations, handleAjoutPanier }) {
   return (
     <>
       <div className="cardItem">
         <div className="cardItemHeader">
-          <img src={identite.img} alt="" />
+          <img src={informations.img} alt="" />
         </div>
         <div className="cardItemBody">
-            <div className="cardItemTitle">
-               <p>{identite.nom}</p>
-            </div>
-            <div className="cardItemInfo">
-                <p>Prix: {identite.prix}€</p>
-                <p>Stock: {identite.stock}</p>
-            </div>
-            <div className="cardItemPanier">
-                <button>Ajouter au Panier</button>
-            </div>
+          <div className="cardItemTitle">
+            <p>{informations.nom}</p>
+          </div>
+          <div className={informations.stock <= 3 ? "cardItemInfo lowNoStock" : informations.stock === 0 ? "cardItemInfo noStock" : "cardItemInfo"}>
+            <p>Prix: {informations.prix}€</p>
+            <p>Stock: {informations.stock}</p>
+          </div>
+          <div className="cardItemPanier">
+            <button disabled={informations.stock === 0} onClick={() => handleAjoutPanier(informations)}>
+              Ajouter au Panier
+            </button>
+          </div>
         </div>
       </div>
     </>

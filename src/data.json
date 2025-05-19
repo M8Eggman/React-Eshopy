@@ -1,5 +1,5 @@
 [
-  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "a" },
-  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "b" },
-  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "c" }
+  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "a", "quantite": 0 },
+  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "b", "quantite": 0 },
+  { "img": "https://placehold.co/300", "nom": "temp", "prix": 1, "stock": 10, "identifiant": "c", "quantite": 0 }
 ]

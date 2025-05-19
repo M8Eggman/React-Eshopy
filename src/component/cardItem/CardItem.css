@@ -1,0 +1,6 @@
+.cardItemPanier button {
+    cursor: pointer;
+}
+.cardItemPanier button:disabled {
+    cursor: auto;
+}
