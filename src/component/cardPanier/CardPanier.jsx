@@ -4,17 +4,16 @@ function CardPanier({ informations, handleEnleverItem }) {
   return (
     <>
       <div className="cardPanier">
-        <div className="cardItemHeader">
+        <div className="cardPanierHeader">
           <img src={informations.img} alt="" />
         </div>
-        <div className="cardItemBody">
-          <div className="cardItemTitle">
-            <p>{informations.nom}</p>
+        <div className="cardPanierBody">
+          <div className="cardPanierTitle">
+            <p>
+              {informations.nom}: {informations.quantite}
+            </p>
           </div>
-          <div className="cardItemInfo">
-            <p>Quantite {informations.quantite}</p>
-          </div>
-          <div className="cardItemPanier">
+          <div className="cardPanierBouton">
             <button onClick={() => handleEnleverItem(informations)}>Enlever un Item</button>
           </div>
         </div>

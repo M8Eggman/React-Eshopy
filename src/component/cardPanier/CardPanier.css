@@ -1,0 +1,45 @@
+.cardPanier {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: #1a1a1e 1px solid;
+  border-radius: 10px;
+  gap: 10px;
+}
+.cardPanierHeader img {
+  width: 150px;
+}
+.cardPanierBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+}
+.cardPanierTitle {
+  font-size: 30px;
+  font-weight: 600;
+  color: #1a1a1e;
+  position: relative;
+  top: 10px;
+}
+.cardPanierBouton {
+  align-self: flex-end;
+}
+.cardPanierBouton button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  background: none;
+  border: #1a1a1e 1px solid;
+  transition: 200ms;
+  cursor: pointer;
+  position: relative;
+  bottom: 10px;
+}
+.cardPanierBouton button:hover {
+  background-color: #1a1a1e;
+  color: white;
+  transition: 200ms;
+  cursor: pointer;
+}
