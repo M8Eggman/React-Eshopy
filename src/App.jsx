@@ -5,7 +5,7 @@ import CardItem from "./component/cardItem/CardItem";
 import CardPanier from "./component/cardPanier/CardPanier";
 
 function App() {
-  const [argent, setArgent] = useState(100);
+  const [argent, setArgent] = useState(2000);
   const [panier, setPanier] = useState([]);
   const [items, setItems] = useState(data);
 
@@ -20,11 +20,11 @@ function App() {
         } else {
           // ajoute la clé quantite et la fixe a 1
           return [...p, { ...element, quantite: 1 }];
-        }                
+        }
       });
-      // mise à jour des stock 
+      // mise à jour des stock
       setItems(newItems);
-       // mise à jour de l'argent
+      // mise à jour de l'argent
       setArgent(argent - element.prix);
     }
   };
@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <div className="argent">
-        <p>Argent: {argent}€</p>
+        <p>Argent: {Math.floor(argent * 100) / 100}€</p>
       </div>
       <section className="shop">
         <div className="items">

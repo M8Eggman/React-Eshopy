@@ -16,11 +16,13 @@ body {
 .panier {
   display: flex;
   flex-direction: column;
-  border: 3px solid black;
+  border: 2px solid black;
   padding: 10px;
   width: 500px;
   gap: 10px;
   height: 80vh;
+  border-radius: 10px;
+  overflow-y: auto;
 }
 .panier > p {
   font-size: 20px;
