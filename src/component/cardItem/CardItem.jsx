@@ -11,7 +11,7 @@ function CardItem({ informations, handleAjoutPanier }) {
           <div className="cardItemTitle">
             <p>{informations.nom}</p>
           </div>
-          <div className={informations.stock <= 3 ? "cardItemInfo lowNoStock" : informations.stock === 0 ? "cardItemInfo noStock" : "cardItemInfo"}>
+          <div className={informations.stock <= 3 && informations.stock > 0 ? "cardItemInfo lowStock" : informations.stock === 0 ? "cardItemInfo noStock" : "cardItemInfo"}>
             <p>Prix: {informations.prix}€</p>
             <p>Stock: {informations.stock}</p>
           </div>

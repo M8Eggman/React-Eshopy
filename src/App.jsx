@@ -52,7 +52,7 @@ function App() {
   return (
     <>
       <div className="argent">
-        <p>Argent: {Math.floor(argent * 100) / 100}€</p>
+        <p>Argent restant: {Math.floor(argent * 100) / 100}€</p>
       </div>
       <section className="shop">
         <div className="items">

@@ -3,6 +3,12 @@ body {
   margin: 0;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+.argent {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 500;
+}
 .shop {
   display: flex;
   justify-content: center;
