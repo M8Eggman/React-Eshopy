@@ -48,6 +48,25 @@ function App() {
       setArgent(argent + element.prix);
     }
   };
+  const handleEnleverTout = (element) => {
+    if (element.quantite > 0) {
+      const newItems = items.map((item) => (item.identifiant === element.identifiant ? { ...item, stock: item.stock + element.quantite } : item));
+      // mise à jour du panier
+      setPanier((p) => {
+        return (
+          p
+            // je décrémente quantité
+            .map((item) => (item.identifiant === element.identifiant ? { ...item, quantite: 0 } : item))
+            // Je garde que ceux qui ont encore une quantité non nul
+            .filter((item) => item.quantite > 0)
+        );
+      });
+      // mise à jour des stock
+      setItems(newItems);
+      // mise à jour de l'argent
+      setArgent(argent + element.prix * element.quantite);
+    }
+  };
 
   return (
     <>
@@ -64,7 +83,14 @@ function App() {
           {panier.length === 0 ? (
             <p>Il n'y a pas d'élément dans le panier</p>
           ) : (
-            panier.map((element) => <CardPanier key={element.identifiant} informations={element} handleEnleverItem={() => handleEnleverItem(element)} />)
+            panier.map((element) => (
+              <CardPanier
+                key={element.identifiant}
+                informations={element}
+                handleEnleverItem={() => handleEnleverItem(element)}
+                handleEnleverTout={() => handleEnleverTout(element)}
+              />
+            ))
           )}
         </div>
       </section>

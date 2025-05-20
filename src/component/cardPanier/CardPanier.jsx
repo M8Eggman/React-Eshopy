@@ -1,6 +1,6 @@
 import "./CardPanier.css";
 
-function CardPanier({ informations, handleEnleverItem }) {
+function CardPanier({ informations, handleEnleverItem, handleEnleverTout }) {
   return (
     <>
       <div className="cardPanier">
@@ -15,6 +15,7 @@ function CardPanier({ informations, handleEnleverItem }) {
           </div>
           <div className="cardPanierBouton">
             <button onClick={() => handleEnleverItem(informations)}>Enlever un Item</button>
+            <button onClick={() => handleEnleverTout(informations)}>Enlever Tout</button>
           </div>
         </div>
       </div>
