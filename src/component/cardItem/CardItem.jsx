@@ -1,6 +1,6 @@
 import "./CardItem.css";
 
-function CardItem({ informations, handleAjoutPanier }) {
+function CardItem({ informations, handleAjoutPanier, argent }) {
   return (
     <>
       <div className="cardItem">
@@ -16,7 +16,7 @@ function CardItem({ informations, handleAjoutPanier }) {
             <p>Stock: {informations.stock}</p>
           </div>
           <div className="cardItemPanier">
-            <button disabled={informations.stock === 0} onClick={() => handleAjoutPanier(informations)}>
+            <button disabled={informations.stock === 0 || argent < informations.prix} onClick={() => handleAjoutPanier(informations)}>
               Ajouter au Panier
             </button>
           </div>

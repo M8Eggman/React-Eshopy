@@ -76,7 +76,7 @@ function App() {
       <section className="shop">
         <div className="items">
           {items.map((element) => (
-            <CardItem key={element.identifiant} informations={element} handleAjoutPanier={() => handleAjoutPanier(element)} />
+            <CardItem key={element.identifiant} informations={element} argent={argent} handleAjoutPanier={() => handleAjoutPanier(element)} />
           ))}
         </div>
         <div className="panier">
